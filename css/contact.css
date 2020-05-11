@@ -1,0 +1,49 @@
+#accordian {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+#accordian > div {
+    flex-grow: 1;
+    flex-basis: 40%;
+    margin-top: -10%;
+    padding: 10% 5%;
+    color: #ccc;
+}
+#accordian > h1 {
+      text-align: center; 
+      cursor: pointer; 
+      font: normal 75px/35px 'Life Savers', cursive;
+}
+
+#detailsHeading{
+    text-align: center;
+}
+
+input[type="radio"]{
+    margin: 0 10px 30px 10px;
+  }
+
+.mapsContainer{
+    height: 100%;
+}
+
+.registeringContactForm{
+    display: none;
+}
+
+h1.checked { margin-top: 5% !important; font-size: 45px;}
+h1.small { font-size: 25px;}
+h1.normal{ 
+    cursor: pointer; 
+    font: normal 34px;}
+
+.details {
+    background: #4e256b;
+}
+.contactForm{ 
+  background: #2b95a5;
+}
+
+/*}*/ 
