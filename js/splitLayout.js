@@ -15,6 +15,9 @@ $(document).ready(function() {
 	  $('.details h1').removeClass('small');
 
 	  document.getElementById("detailsHeading").innerHTML = "Contact Us";
+	  document.getElementById("registering").checked = false;
+	  document.getElementById("businessInterest").checked = false;
+	  document.getElementById("generalEnquiries").checked = false;
 	});
 	
 	
