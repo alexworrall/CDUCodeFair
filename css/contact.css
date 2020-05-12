@@ -33,7 +33,15 @@ input[type="radio"]{
     display: none;
 }
 
-h1.checked { margin-top: 5% !important; font-size: 45px;}
+.businessContactForm{
+    display: none;
+}
+
+.generalContactForm{
+    display: none;
+}
+
+h1.checked { font-size: 45px;}
 h1.small { font-size: 25px;}
 h1.normal{ 
     cursor: pointer; 

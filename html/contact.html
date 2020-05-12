@@ -83,9 +83,9 @@
                             <p>Contact us about:</p>
                             <input  type="radio" id="registering" name="enquiryType" value="registering" onclick="radioRegisterClick();">
                             <label for="registering" class="radioLabel">Registering</label><br>
-                            <input type="radio" id="businessInterest" name="enquiryType" value="businessInterest">
+                            <input type="radio" id="businessInterest" name="enquiryType" value="businessInterest" onclick="radioBusinessClick();">
                             <label for="businessInterest" class="radioLabel">Business Interest</label><br>
-                            <input type="radio" id="generalEnquiries" name="enquiryType" value="generalEnquiries">
+                            <input type="radio" id="generalEnquiries" name="enquiryType" value="generalEnquiries" onclick="radioGeneralClick();">
                             <label for="generalEnquiries" class="radioLabel">General Enquiries</label>
                         </form>
                     </div>
@@ -105,6 +105,59 @@
                             <textarea placeholder="Enter your enquiry about registering" rows="7" cols="50"></textarea>
                             <br>
                             <button type="button" class="register">Submit Registration Enquiry</button>
+                        </div>
+                        <div class="contactDetails">
+                            <p>Email us at CDU Code Fair: <br><a href="mailto: cducodefair@cdu.edu.au">cducodefair@cdu.edu.au</a></p>
+                            <p>Phone us at CDU: <br>(08) 8946 7766 or 1800 061 963</p>
+                            <p>See the CDU website: <br><a href="http://www.cdu.edu.au">www.cdu.edu.au</a></p>
+                        </div>
+                    </form>
+                    <br>
+                  </div>
+                  <div class="businessContactForm">
+                    <h1>Business Enquiry</h1>
+                    <p>Are you a business interested in sponsoring or being involved in the CDU Code Fair?
+                    </p>
+                    <form>
+                        <div class="inputs">
+                            <input type="text" placeholder="Contact Name">
+                            <br>
+                            <input type="text" placeholder="Business Name">
+                            <br>
+                            <input type="email" placeholder="Email">
+                            <br>
+                            <input type="text" placeholder="Phone">
+                            <br>
+                            <input type="text" placeholder="Business Type">
+                            <br>
+                        </div>
+                        <div class="enquiryComments">
+                            <textarea placeholder="Enter any comments about your business and interest in the event" rows="7" cols="50"></textarea>
+                            <br>
+                            <button type="button" class="register">Submit Business Interest</button>
+                        </div>
+                        <div class="contactDetails">
+                            <p>Email us at CDU Code Fair: <br><a href="mailto: cducodefair@cdu.edu.au">cducodefair@cdu.edu.au</a></p>
+                            <p>Phone us at CDU: <br>(08) 8946 7766 or 1800 061 963</p>
+                            <p>See the CDU website: <br><a href="http://www.cdu.edu.au">www.cdu.edu.au</a></p>
+                        </div>
+                    </form>
+                    <br>
+                  </div>
+                  <div class="generalContactForm">
+                    <h1>General Enquiry about the CDU Code Fair</h1>
+                    <form>
+                        <div class="inputs">
+                            <input type="text" placeholder="Name">
+                            <br>
+                            <input type="email" placeholder="Email">
+                            <br>
+                            <input type="text" placeholder="Phone">
+                        </div>
+                        <div class="enquiryComments">
+                            <textarea placeholder="Enter your general enquiry" rows="7" cols="50"></textarea>
+                            <br>
+                            <button type="button" class="register">Submit General Enquiry</button>
                         </div>
                         <div class="contactDetails">
                             <p>Email us at CDU Code Fair: <br><a href="mailto: cducodefair@cdu.edu.au">cducodefair@cdu.edu.au</a></p>
