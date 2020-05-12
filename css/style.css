@@ -546,6 +546,7 @@ body {
 
     .sponsorsSection {
       padding: 50px 0;
+      margin: 0 auto;
     }
     
     .flex-row-stretch {
@@ -723,6 +724,7 @@ body {
         margin: auto;
         width: 80%;
     }
+
 
     .bigRegisterButton{
         padding: 15px 55px;
