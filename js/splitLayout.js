@@ -4,9 +4,9 @@ $(document).ready(function() {
 	  //$('.details h1').addClass('checked');
 	  //$('.contactForm h1').addClass('small'); 
 	  $("#accordian .contactForm").animate(
-		{ flexBasis: "34.75%"}, 500);
+		{ flexBasis: "40%"}, 500);
 	  $("#accordian .details").animate(
-		{ flexBasis: "34.75%"}, 500);
+		{ flexBasis: "40%"}, 500);
 	  $("#accordian .details > div").show(500);
 	  $(".registeringContactForm").hide(500);
 	  $(".businessContactForm").hide(500);
