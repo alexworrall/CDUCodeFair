@@ -25,10 +25,6 @@ input[type="radio"]{
     margin: 0 10px 30px 10px;
   }
 
-.mapsContainer{
-    height: 100%;
-}
-
 .registeringContactForm{
     display: none;
 }
@@ -106,3 +102,11 @@ textarea{
     color: black;
   }
 /*}*/ 
+
+/* If the screen goes above 512 pixels then change the size of the map */  
+@media (min-width: 570px) {
+
+    .mapsContainer{
+        height: 100%;
+    }
+}
