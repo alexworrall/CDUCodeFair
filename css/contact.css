@@ -9,7 +9,7 @@
     flex-basis: 40%;
     margin-top: -10%;
     padding: 10% 5%;
-    color: #ccc;
+    color: black;
 }
 #accordian > h1 {
       text-align: center; 
@@ -40,10 +40,46 @@ h1.normal{
     font: normal 34px;}
 
 .details {
-    background: #4e256b;
+    background:white;
 }
 .contactForm{ 
   background: #2b95a5;
 }
 
+input[type="text"], input[type="email"]{
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    background-color: #2b95a5;
+    width: 80%;
+}
+
+.inputs{
+    float:left;
+    position: relative;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    width: 30%;
+}
+
+.enquiryComments{
+    position: relative;
+    padding: 10px 50px 10px 10px;
+    margin-top: 25px;
+    float: left;
+}
+
+.contactDetails{
+    padding: 20px;
+}
+
+textarea{
+    background-color: #2b95a5;
+    font-size: 12;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    margin-bottom: 20px;
+}
 /*}*/ 
