@@ -2,7 +2,17 @@
 html{
   color: #404040;
 }
+.formCard{
+  border: 1px black;
+  align-items: center;
+  text-align: left;
+  margin:20px;
+  margin-left: 20%;
 
+
+}
+
+}
 body {
     margin: 0;
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
@@ -155,7 +165,7 @@ body {
   }
 
   h1{
-      font-size: 24px;
+      font-size: 28px;
       margin-bottom: 0;
   }
 
@@ -225,8 +235,6 @@ body {
 .eventInformation{
     border-bottom: 0px solid #211545;
     overflow: hidden;
-    width: 90%;
-    margin: 0 auto;
 }
 
 /* Information Card code. Sourced from: https://www.zeolearn.com/magazine/how-to-easily-create-modern-material-design-cards-with-html-and-css */
@@ -243,7 +251,7 @@ body {
     margin: 20px;
     min-width: 300px;
     width: 350px;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
     position: relative;
     float: left;
@@ -514,7 +522,10 @@ body {
       height: 175px;
       margin: 0 auto;
     }
-
+  .cardVideoContainer{
+      height: 200px;
+      margin: 0 auto;
+    }
     .googleMapContainer{
       height: 270px;
       margin: 0 auto;
@@ -548,7 +559,6 @@ body {
 
     .sponsorsSection {
       padding: 50px 0;
-      margin: 0 auto;
     }
     
     .flex-row-stretch {
@@ -704,15 +714,18 @@ body {
         grid-template-columns: .75fr 2fr;
         grid-template-rows: 1fr 1fr 1fr;
         column-gap: 15px;
-        text-align: left;
       }
 
     .headerLogoSmall{
         display: none;
     }
 
+    h1{
+        font-size: 34px;
+    }
+
     .bodyParagraphWidth{
-        width: 95%;
+        width: 75%;
     }
 
     .grid-item.grid-item5{
@@ -723,7 +736,6 @@ body {
         margin: auto;
         width: 80%;
     }
-
 
     .bigRegisterButton{
         padding: 15px 55px;
@@ -744,12 +756,8 @@ body {
         text-decoration: none;
       }
 
-      h1{
-        font-size: 34px;
-    }
-
       .bodyParagraphWidth{
-        width: 60%;
+        width: 50%;
     }
 
     .grid-container {
