@@ -3,10 +3,6 @@
 
 /* basic stylings ------------------------------------------ */
   
-  body {
-    font-family: sans-serif;
-  }
-  
   .container {
     display: flex;
     height: 90vh;
