@@ -288,7 +288,7 @@
       @-webkit-keyframes left {
         0% {
           opacity: 0;
-          width: 0;
+          width: 40%;
         }
         100% {
           opacity: 1;
@@ -299,7 +299,7 @@
       @keyframes left {
         0% {
           opacity: 0;
-          width: 0;
+          width: 40%;
         }
         100% {
           opacity: 1;
