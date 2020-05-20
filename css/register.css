@@ -74,6 +74,11 @@
     font-size: 14px;
   }
 
+  .CDUGif{
+    width: 300px;
+    height: 45px;
+  }
+
   .registerCDULogo{
     margin: 0 auto 10px;
     width: 300px;
@@ -255,6 +260,11 @@
   @media (min-width: 768px) {
     #right{
         display: block;
+    }
+
+    .CDUGif{
+      width: 400px;
+      height: 70px;
     }
 
     .registerCDULogo{
