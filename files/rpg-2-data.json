@@ -2,66 +2,24 @@
 	"gallery": [
   	{
     	"id": 0,
-      "name": "Cobweb",
-      "desc": "Art party skateboard meggings plaid tacos, sint echo park ex voluptate mixtape. Single-origin coffee fugiat tote bag, celiac messenger bag quinoa voluptate.",
+      "name": "Meet Employers",
+      "desc": "Industry Employer Speed Dating provides graduating students with an opportunity to meet local employers to kick-start their career.",
       "tags": ["Cobweb", "Tree", "Spider", "Moss", "Nature"],
       "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-1.jpg"
     },
     {
     	"id": 1,
-      "name": "Hills",
-      "desc": "Est lo-fi eiusmod nulla jean shorts cred. Officia 8-bit adipisicing paleo, eiusmod shabby chic mlkshk cliche thundercats consectetur ennui.",
+      "name": "Workshops",
+      "desc": "The Cyber Security Workshop provides a hands on experience on how to protect your self digitally. We are promoting Cyber Security as a career for the next generation. Our workshop is tailored around the current themes for digitally engaged kids.",
       "tags": ["Hills", "Nature", "Forest", "Moutains", "Field"],
       "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-2.jpg"
     },
     {
     	"id": 2,
-      "name": "City",
-      "desc": "Laborum velit id salvia, vegan readymade consequat tumblr fanny pack cold-pressed pop-up. Cardigan odio VHS velit hoodie. Tempor proident accusamus deep v cupidatat hell of.",
+      "name": "Awards",
+      "desc": "oin us to recognise high achieving CDU IT students from around Australia. Supported by the NT Department of Corporate Information Services. $100 for the top student in each IT unit. Awards begin the Code Fair",
       "tags": ["City", "Skyline", "Building", "Skyscraper", "Summer"],
       "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-3.jpg"
-    },
-    {
-    	"id": 3,
-      "name": "Forest",
-      "desc": "Everyday carry tempor man braid roof party, chicharrones copper mug retro officia plaid beard fanny pack listicle. Actually gochujang squid et knausgaard.",
-      "tags": ["Forest", "Lake", "Rocks", "Nature", "Mountain"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-4.jpg"
-    },
-    {
-    	"id": 4,
-      "name": "Sea",
-      "desc": "Exercitation pop-up pariatur letterpress, kitsch quis anim aute godard air plant. Pok pok af la croix sunt lo-fi banjo, hot chicken offal neutra small batch qui readymade VHS gochujang non.",
-      "tags": ["Sea", "Ocean", "Waves", "Surf", "Blue"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-5.jpg"
-    },
-    {
-    	"id": 5,
-      "name": "Sunset",
-      "desc": "Tilde pabst bicycle rights roof party. Readymade aute crucifix messenger bag fixie, yr tacos qui pop-up truffaut succulents ut. Adipisicing cronut nostrud meditation wolf polaroid.",
-      "tags": ["Sunset", "Nature", "Cactus", "Desert", "Grass"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-6.jpg"
-    },
-    {
-    	"id": 6,
-      "name": "Branches",
-      "desc": "Woke freegan jianbing vice letterpress eiusmod. Irony poke air plant, echo park migas chia marfa put a bird on it farm-to-table celiac pickled blog succulents cillum helvetica.",
-      "tags": ["Branches", "Bush", "Nature", "Tree", "Leaf"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-7.jpg"
-    },
-    {
-    	"id": 7,
-      "name": "Bridge",
-      "desc": "Tbh hashtag snackwave normcore incididunt cillum. Slow-carb normcore aliqua, listicle magna air plant microdosing locavore pitchfork seitan +1 cronut selfies stumptown fam.",
-      "tags": ["Bridge", "River", "City", "Dusk", "Fog"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-8.jpg"
-    },
-    {
-    	"id": 8,
-      "name": "Lake",
-      "desc": "Meggings PBR&B waistcoat pinterest excepteur aliqua. Gentrify thundercats intelligentsia consectetur, semiotics pork belly pop-up vaporware fam laboris austin 8-bit roof party.",
-      "tags": ["Lake", "Water", "Forest", "Hills", "Deck"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-9.jpg"
     }
   ]
 }
