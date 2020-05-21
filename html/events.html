@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - CDU Code Fair 2020</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/events.css">
+    <link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+	<header class="header">
+		<nav>
+			<a href="../index.html" class="logo">code fair</a>
+			<button onclick="location.href='register.html'" type="button" class="register">Register</button>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="#Timetable">Timetable</a></li>
+				<li><a href="#PreviousYears">History</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main id="body">
+		<section class="descriptionSection">
+			<div class="grid-container">
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item grid-item3">
+					<div class="descriptionLogo">
+						<picture>
+							<source media="(min-width: 768px)" srcset="../images/CDULogoBigDifferent_340.png">
+							<source media="(min-width: 400px)" srcset="../images/CDULogoBigDifferent_170.png">
+							<!-- Fall back image in case picture not supported-->
+							<img class="headerLogo" src="../images/CDULogoBigDifferent_340.png" alt="Charles Darwin University header Logo">
+						</picture>
+					</div>
+				</div>
+				<div class="grid-item grid-item4">
+					<section class="bodyParagraphWidth">
+						<h1>CDU Code Fair 2020 is ready for registrations</h1>
+						<p>Registrations are now open for the 2020 CDU Code Fair. The code fair is a place for students to share their IT skills, connect with industry and for students to showcase their creative digital problem solving skills.</p>
+					</section>
+				</div>
+				<div class="grid-item grid-item5">
+					<button onclick="location.href='register.html'" class="bigRegisterButton" type="button">Register</button>
+					<!-- Only show this logo on the small screen for phone -->
+					<img class="headerLogoSmall" src="../images/CDU_Logo_Text.jpg" alt="Charles Darwin University header logo for smaller screens">
+				</div>
+				<div class="grid-item grid-item6">
+				</div>
+			</div>
+			<hr class="purpleLine">
+		</section>
+		<section class="eventHeader">
+			<div class="eventInfoContainer">
+				<h2>Code Fair Events</h2>
+			</div>
+		</section>
+        
+        <!-- Contact Us section for desktop viewing -->
+        <section class="eventsSection">
+			<div id="app"></div>
+			<script type="text/babel">
+				class App extends React.Component {
+	constructor() {
+		super()
+		this.state = {
+			data: [],
+			activeID: 0,
+			imageView: false
+		}
+	}
+	componentWillMount() {
+		this._loadData('https://alexworrall.github.io/CDUCodeFair/files/rpg-2-data.json')
+	}
+	componentWillUnmount() {
+			this._loadData.abort()
+		}
+		// Fetch data, then clone it to state using destructuring
+		// XHR Fallback
+	_loadData(url) {
+		fetch(url, {
+				method: 'GET'
+			})
+			.then(response => response.json())
+			.then(json => this.setState({
+				data: [...json.gallery]
+			}))
+			.catch((err) => {
+				console.log(err.message)
+				try {
+					const xhr = new XMLHttpRequest()
+					xhr.open('GET', url)
+					xhr.responseType = 'json'
+
+					xhr.onload = () => {
+						let json = xhr.response
+						this.setState({
+							data: [...json.gallery]
+						})
+					}
+
+					xhr.onerror = () => {
+						throw new Error('XMLHttpRequest Failed...')
+					}
+
+					xhr.send()
+				} catch (e) {
+					console.log(e.message)
+				}
+			})
+	}
+	_openImageView(id) {
+		this.setState({
+			activeID: id,
+			imageView: true
+		});
+	}
+	_closeImageView() {
+		this.setState({
+			imageView: false
+		})
+	}
+	render() {
+		return (
+			<div className="wrapper">
+				{
+					this.state.imageView ? 
+					<ImageView {...this.state.data[this.state.activeID]}
+						_closeImageView={this._closeImageView.bind(this)} />
+						:
+					<Gallery data={this.state.data}
+						_openImageView={this._openImageView.bind(this)} />
+				}
+			</div>
+		)
+	}
+}
+
+class ImageView extends React.Component {
+	render() {
+		return (
+			<div className="imageview-wrapper fadeIn">
+				<div className="imageview">
+					<Image CSSClass="imageview-image"
+						src={this.props.src}
+						alt={this.props.name} />
+					<div className="imageview-info">
+						<button className="imageview-close" onClick={this.props._closeImageView}>x</button>
+						<h2>{this.props.name}</h2>
+						<p>{this.props.desc}</p>
+						<h3>Tags</h3>
+						<ul>
+							{this.props.tags.map(tag => <li>{tag}</li>)}
+						</ul>
+					</div>
+			</div>
+		</div>
+		)
+	}
+}
+
+class Gallery extends React.Component {
+	render() {
+		return (
+			<div className="gallery fadeIn">
+			{
+				this.props.data.map( data => 
+					<Tile key={data.id}
+						id={data.id}
+						src={data.src}				
+						name={data.name}
+						desc={data.desc}
+						_openImageView={this.props._openImageView} />
+				)
+			}
+	</div>
+		)
+	}
+}
+
+class Tile extends React.Component {
+	_handleClick() {
+		this.props._openImageView(this.props.id)
+	}
+	render() {
+		return (
+			<div className="gallery-tile" onClick={this._handleClick.bind(this)}>
+			<div className="picture-info">
+				<h2>{this.props.name}</h2>
+				{/*<p>{this.props.desc}</p>*/}
+			</div>
+			<Image
+				CSSClass="tile-image"
+				src={this.props.src} 
+				alt={this.props.name} />
+		</div>
+		)
+	}
+}
+
+const Image = (props) => (
+	<img
+		className={props.CSSClass}
+		src={props.src} 
+		alt={props.name} />
+)
+
+// Render app
+ReactDOM.render(<App />, document.getElementById('app'))
+			</script>
+        </section>
+	</main>
+	<footer class="footer">
+		<div class="FooterCopyright">© Copyright Alexander Worrall</div>
+		<div class="FooterSocialIcons"></div>
+    </footer>
+</body>
+</html>
