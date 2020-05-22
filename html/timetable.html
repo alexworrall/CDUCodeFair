@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable - CDU Code Fair 2020</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/timetable.css">
+	<link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico' />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>document.getElementsByTagName("html")[0].className += " js";</script>
+</head>
+<body>
+	<header class="header">
+		<nav>
+			<a href="../index.html" class="logo">code fair</a>
+			<button onclick="location.href='register.html'" type="button" class="register">Register</button>
+			<input class="menu-btn" type="checkbox" id="menu-btn" />
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="register.html">Register</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main id="body">
+		<section class="descriptionSection">
+			<div class="grid-container">
+				<div class="grid-item"></div>
+				<div class="grid-item"></div>
+				<div class="grid-item grid-item3">
+					<div class="descriptionLogo">
+						<picture>
+							<source media="(min-width: 768px)" srcset="../images/CDULogoBigDifferent_340.png">
+							<source media="(min-width: 400px)" srcset="../images/CDULogoBigDifferent_170.png">
+							<!-- Fall back image in case picture not supported-->
+							<img class="headerLogo" src="../images/CDULogoBigDifferent_340.png" alt="Charles Darwin University header Logo">
+						</picture>
+					</div>
+				</div>
+				<div class="grid-item grid-item4">
+					<section class="bodyParagraphWidth">
+						<h1>CDU Code Fair 2020 is ready for registrations</h1>
+						<p>Registrations are now open for the 2020 CDU Code Fair. The code fair is a place for students to share their IT skills, connect with industry and for students to showcase their creative digital problem solving skills.</p>
+					</section>
+				</div>
+				<div class="grid-item grid-item5">
+					<button onclick="location.href='register.html'" class="bigRegisterButton" type="button">Register</button>
+					<!-- Only show this logo on the small screen for phone -->
+					<img class="headerLogoSmall" src="../images/CDU_Logo_Text.jpg" alt="Charles Darwin University header logo for smaller screens">
+				</div>
+				<div class="grid-item grid-item6">
+				</div>
+			</div>
+			<hr class="purpleLine">
+		</section>
+		<section class="eventHeader">
+			<div class="eventInfoContainer">
+				<h2>Timetable of Events</h2>
+			</div>
+		</section>
+        
+		<!-- Timetable sourced from: https://codepen.io/codyhouse/pen/FdkEf -->
+		<div class="timetableBackground">
+			<section id="cd-timeline" class="cd-container">
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="../images/cd-icon-location.svg" alt="Picture">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Registration</h2>
+						<p>Be at the venue on time for last minute registrations at 8:30am sharp. Please register beforehand if possible.</p>
+						<a href="register.html" class="cd-read-more">Register for the event</a>
+						<span class="cd-date">8:30am</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+		
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="../images/cd-icon-location.svg" alt="Movie">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Opening of the 2020 CDU Code Fair</h2>
+						<p>The opening of the 2020 CDU Code Fair will kick off the activities. There will be a Welcome to the country by Larrakia Nation, 
+							A speech will then be given by David Young, Dean of College of Engineering, IT and Environment.
+						</p>
+						<!--<a href="#0" class="cd-read-more">Read more</a>-->
+						<span class="cd-date">9:00am</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+		
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-movie">
+						<img src="../images/cd-icon-location.svg" alt="Picture">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Academic Excellence Awards</h2>
+						<p>Academic excellence awards will be given to IT students who have recieved outstanding marks in their studies. 
+							The awards will be presented by Kathleen Robinson</p>
+						<a href="events.html" class="cd-read-more">See events page</a>
+						<span class="cd-date">9:15am</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+		
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="../images/cd-icon-movie.svg" alt="Location">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Keynote Speaker</h2>
+						<p>We have Ben Peterson from IBM Australia as our first keynote speaker.
+							His keynote will be on: "ANZ Developer, Leader and Advocate".</p>
+						<!--<a href="#0" class="cd-read-more">Read more</a>-->
+						<span class="cd-date">9:30am</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+		
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="../images/cd-icon-location.svg" alt="Location">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Morning Tea</h2>
+						<p>Recharge your batteries with some morning tea to be ready for the rest of the big day.</p>
+						<span class="cd-date">10:00am</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-movie">
+						<img src="../images/cd-icon-location.svg" alt="Location">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Coding and Poster Competitions</h2>
+						<p>Show us your skills with coding and visual design by entering our competitions! There are cash prizes to be won.</p>
+						<span class="cd-date">10:15am</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+		
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="../images/cd-icon-location.svg" alt="Movie">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Lunch</h2>
+						<p>Have a break from all the action to get some lunch before an action packed afternoon.</p>
+						<span class="cd-date">12:00pm</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="../images/cd-icon-movie.svg" alt="Movie">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Keynote Speaker</h2>
+						<p>We have Carlos Nogueira from Intersystems as our second keynote speaker.
+							Make sure you attend this talk from an top notch industry expert.
+						</p>
+						<span class="cd-date">12:45pm</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-movie">
+						<img src="../images/cd-icon-location.svg" alt="Movie">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>CDU IT Code Fair Awards Presentation</h2>
+						<p>
+							Hon. Lauren Moss will attend to present the awards for the CDU IT Code Fair to our
+							worthy students.
+						</p>
+						<span class="cd-date">01:15pm</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="../images/cd-icon-movie.svg" alt="Movie">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Closing Speech</h2>
+						<p>
+							Hon. Lauren Moss will then give the closing speech for the 2020 IT Code Fair.
+						</p>
+						<span class="cd-date">01:45pm</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="../images/cd-icon-location.svg" alt="Movie">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Word of Thanks</h2>
+						<p>
+							CDU IT Discipline Chair, Professor Suresh Thennadil will give a thank you speech to
+							all who have attended the 2020 IT Code Fair.
+						</p>
+						<span class="cd-date">01:55pm</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-movie">
+						<img src="../images/cd-icon-picture.svg" alt="Movie">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Afternoon Tea</h2>
+						<p>
+							Before meeting with potential employers we will have some time for afternoon tea.
+						</p>
+						<span class="cd-date">2:00pm</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-picture">
+						<img src="../images/cd-icon-picture.svg" alt="Movie">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Employer Speed Dating</h2>
+						<p>
+							Industry Employer Speed Dating provides graduating students with an opportunity to meet local employers 
+							to kick-start their career. Put your best foot forward and impress some industry leaders.
+						</p>
+						<a href="events.html" class="cd-read-more">See events page</a>
+						<span class="cd-date">2:15pm</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+
+				<div class="cd-timeline-block">
+					<div class="cd-timeline-img cd-location">
+						<img src="../images/cd-icon-location.svg" alt="Movie">
+					</div> <!-- cd-timeline-img -->
+		
+					<div class="cd-timeline-content">
+						<h2>Event close</h2>
+						<p>
+							Thank you to everyone for making the 2020 IT Code fair such a success! We look forward
+							to seeing you in 2021. Happy coding!
+						</p>
+						<span class="cd-date">3:30pm</span>
+					</div> <!-- cd-timeline-content -->
+				</div> <!-- cd-timeline-block -->
+			</section> <!-- cd-timeline -->
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="FooterCopyright">© Copyright Alexander Worrall</div>
+		<div class="FooterSocialIcons"></div>
+	</footer>
+	<script src="../js/timetable.js"></script>
+</body>
+</html>
