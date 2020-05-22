@@ -11,14 +11,14 @@
     	"id": 1,
       "name": "Workshops",
       "desc": "The Cyber Security Workshop provides a hands on experience on how to protect your self digitally. We are promoting Cyber Security as a career for the next generation. Our workshop is tailored around the current themes for digitally engaged kids.",
-      "tags": ["Hills", "Nature", "Forest", "Moutains", "Field"],
+      "tags": ["Attend some of our excellent cyber security workshops, including: ", "Social Profiles Workshops", "Digital Wellbeing workshops", "Cyber Bullying Workshops", "Online Privacy and Security Workshops"],
       "src": "https://alexworrall.github.io/CDUCodeFair/images/workshopsImage.jpg"
     },
     {
     	"id": 2,
       "name": "Awards",
-      "desc": "oin us to recognise high achieving CDU IT students from around Australia. Supported by the NT Department of Corporate Information Services. $100 for the top student in each IT unit. Awards begin the Code Fair",
-      "tags": ["City", "Skyline", "Building", "Skyscraper", "Summer"],
+      "desc": "Join us to recognise high achieving CDU IT students from around Australia. Supported by the NT Department of Corporate Information Services.",
+      "tags": ["$100 for the top student in each IT unit", "Awards begin the Code Fair", "The top student for every IT units will each receive a prize."],
       "src": "https://alexworrall.github.io/CDUCodeFair/images/awardsImage.jpg"
     }
   ]
