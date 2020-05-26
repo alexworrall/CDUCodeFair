@@ -49,7 +49,7 @@
   }
 
   .registerLabel{
-    display: none;
+    visibility: hidden;
   }
   
   .registerHeader > p {
