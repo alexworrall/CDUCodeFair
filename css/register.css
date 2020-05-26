@@ -47,6 +47,10 @@
     color: #404040;
     text-align: center;
   }
+
+  .registerLabel{
+    display: none;
+  }
   
   .registerHeader > p {
     margin-top: 10px;
