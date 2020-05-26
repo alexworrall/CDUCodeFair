@@ -3,8 +3,8 @@
   	{
     	"id": 0,
       "name": "Meet Employers",
-      "desc": "Industry Employer Speed Dating provides graduating students with an opportunity to meet local employers to kick-start their career.",
-      "tags": ["Meet local employers in your field", "Get a head start in your job search", "You must attend the preparation workshop", "Complete the preparation requirements beforehand", "Preference to students in their final year"],
+      "desc": "Industry Employer Speed Dating provides graduating students with an opportunity to meet local employers to kick-start their career. To participate in the employer speed dating simply register for the CDU code fair and more information will be sent to you!",
+      "tags": ["Meet local employers in your field", "Get a head start in your job search", "Preference to students in their final year"],
       "src": "https://alexworrall.github.io/CDUCodeFair/images/employerImage.jpg"
     },
     {
