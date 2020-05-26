@@ -2,21 +2,21 @@
 	"gallery": [
   	{
     	"id": 0,
-      "test": "Meet Employers",
+      "name": "Meet Employers",
       "desc": "Industry Employer Speed Dating provides graduating students with an opportunity to meet local employers to kick-start their career. To participate in the employer speed dating simply register for the CDU code fair and more information will be sent to you!",
       "tags": ["Meet local employers in your field", "Get a head start in your job search", "Preference to students in their final year"],
       "src": "https://alexworrall.github.io/CDUCodeFair/images/employerImage.jpg"
     },
     {
     	"id": 1,
-      "test": "Workshops",
+      "name": "Workshops",
       "desc": "The Cyber Security Workshop provides a hands on experience on how to protect your self digitally. We are promoting Cyber Security as a career for the next generation. Our workshop is tailored around the current themes for digitally engaged kids.",
       "tags": ["Attend some of our excellent cyber security workshops, including: ", "Social Profiles Workshops", "Digital Wellbeing workshops", "Cyber Bullying Workshops", "Online Privacy and Security Workshops"],
       "src": "https://alexworrall.github.io/CDUCodeFair/images/workshopsImage.jpg"
     },
     {
     	"id": 2,
-      "test": "Awards",
+      "name": "Awards",
       "desc": "Join us to recognise high achieving CDU IT students from around Australia. Supported by the NT Department of Corporate Information Services.",
       "tags": ["$100 for the top student in each IT unit", "Awards begin the Code Fair", "The top student for every IT units will each receive a prize."],
       "src": "https://alexworrall.github.io/CDUCodeFair/images/awardsImage.jpg"
